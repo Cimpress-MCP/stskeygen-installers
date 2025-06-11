@@ -5,21 +5,21 @@
 class Stskeygen < Formula
   desc "A commandline utility for trading directory service credentials (such as AD username and password) for AWS STS Keys."
   homepage "https://cimpress-support.atlassian.net/wiki/spaces/CloudKB/pages/15058567646/Generating+STS+access+keys+via+Auth0"
-  version "3.2.0"
+  version "3.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.2.0/stskeygen_3.2.0_darwin_amd64.tar.gz"
-      sha256 "e48232f7f4201dfd32e99fa1a0d50034cf203e2ea8e9b34472ebf3b338e7b6be"
+      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.3.0/stskeygen_3.3.0_darwin_amd64.tar.gz"
+      sha256 "5d3b79f6604475137d8042e6deee0cd4e751702c6a70bbb91945891d8799256e"
 
       def install
         bin.install "stskeygen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.2.0/stskeygen_3.2.0_darwin_arm64.tar.gz"
-      sha256 "807e4b03be8c0e89431b50f3d6329291e04cb151c6b2238ed82760dc486fd1c0"
+      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.3.0/stskeygen_3.3.0_darwin_arm64.tar.gz"
+      sha256 "ea710db12c87e5e8832cf84b918682199e46e11bb5985de5dac1c89419ad5bea"
 
       def install
         bin.install "stskeygen"
@@ -29,15 +29,15 @@ class Stskeygen < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.2.0/stskeygen_3.2.0_linux_amd64.tar.gz"
-      sha256 "a2c5645cddb4a49f9238e24fa546cb62ad0cc74a10446e473e7451370867844e"
+      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.3.0/stskeygen_3.3.0_linux_amd64.tar.gz"
+      sha256 "99292fdd6fd39a83068701c65d8ab31048ec80014c43d5f5b7cbdb51470ca3b5"
       def install
         bin.install "stskeygen"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.2.0/stskeygen_3.2.0_linux_arm64.tar.gz"
-      sha256 "b4d751bf4acb15f8da29498cf04cb7ac8f348c587bb419d9b014d8f5ddab5775"
+      url "https://ce-installation-binaries.s3.us-east-1.amazonaws.com/stskeygen/3.3.0/stskeygen_3.3.0_linux_arm64.tar.gz"
+      sha256 "d9d1f72c90eafed6b93633c615cf4452efff08ddf9fd0200987a764a2d42c25c"
       def install
         bin.install "stskeygen"
       end
